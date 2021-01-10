@@ -1,0 +1,292 @@
+html {
+  box-sizing: border-box;
+}
+
+button,
+a,
+textarea{
+  box-sizing: border-box;
+}
+
+.formflex{
+	list-style:none;
+	margin-left: 0;
+}
+
+.formflex li > div > select, 
+.formflex li > div > textarea, 
+.formflex li > div > input[type="text"], 
+.formflex li > div > input[type="password"], 
+.formflex li > div > input[type="datetime"], 
+.formflex li > div > input[type="datetime-local"], 
+.formflex li > div > input[type="date"], 
+.formflex li > div > input[type="month"], 
+.formflex li > div > input[type="time"], 
+.formflex li > div > input[type="week"], 
+.formflex li > div > input[type="number"], 
+.formflex li > div > input[type="email"], 
+.formflex li > div > input[type="url"], 
+.formflex li > div > input[type="search"], 
+.formflex li > div > input[type="tel"], 
+.formflex li > div > input[type="color"], 
+.formflex li > div > .uneditable-input{
+	margin-bottom: 0;
+}
+
+.formflex li{
+	clear: both;
+    padding: 1px;
+    margin: 0 0 7px 0;
+}
+
+.formflex > li > div{
+	width: 75%;
+	float: left;
+	margin: 0 0 7px 0;
+}
+.formflex > li > label{
+	width: 25%;
+	float: left;
+}
+
+@media (max-width: 480px) {
+	
+	.headerprimary .cont-buttons button,
+	.headerprimary .cont-buttons a{
+		margin-bottom: 10px !important;
+		text-align: center !important;
+		float: none !important;
+		clear: both !important;
+		position: static !important;
+		width: 100%;
+	}
+
+	ul.horizontal-list li:first-child {
+		margin-bottom:5px;
+		display: block;
+	}
+	
+	ul.horizontal-list button,
+	ul.horizontal-list a{	
+		width: 100%;
+	}
+
+	ul.horizontal-list li{
+		
+		float: none;
+		clear: both;
+	}
+
+	.formflex input[type=text],
+	.formflex input[type=number],
+	.formflex input[type=email],
+	.formflex input[type=file],
+	.formflex input[type=url],
+	.formflex input[type=password],
+	.formflex textarea{
+		width: 97%; 
+	}
+
+	.formflex select {
+		width: 100%; 
+	}
+	.formflex > li > label{
+		font-weight: bold;
+	}	
+
+	.flex-align-center{
+    	text-align:center;
+  	}
+
+  	.flex-align-left{
+    	text-align:left;
+  	}
+
+  	.flex-align-right{
+    	text-align:right;
+  	}
+}
+
+@media (max-width: 680px) {
+	
+	.formflex > li > div{
+		float: none;
+		width: 100%;
+	}
+	.formflex > li > label{
+		float: none;
+		width: 100%;
+		font-weight: bold;
+	}
+}
+
+@media only screen and (max-width: 780px){
+	/* Force table to not be like tables anymore */
+	.table-responsive table, 
+	.table-responsive thead, 
+	.table-responsive tbody, 
+	.table-responsive th, 
+	.table-responsive td, 
+	.table-responsive tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.table-responsive thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	.table-responsive tr {
+		/*border: 1px solid #ccc;*/
+		border-bottom: 1px solid #DDD;
+    	border-left: 1px solid #DDD;
+	}
+
+ 
+	.table-responsive td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	.table-responsive td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	.table-responsive td:before {
+		content: attr(data-th);
+	}
+}
+
+@media only screen and (max-width: 780px){
+	
+	.headerprimary small.small-title{
+		text-align: center;
+	}
+	.headerprimary legend.page-title{
+		text-align: center;
+	}
+
+	.headerprimary .cont-buttons{
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+		text-align: center !important;
+		float: none !important;
+		clear: both !important;
+		position: static !important;
+	}
+	
+	.date{
+		text-align: center;
+		float: none;
+		margin-left: 0;
+		list-style: none;
+	}
+	
+	.input-append, .input-prepend{
+		margin-bottom: 0;
+	}
+	
+	.headerprimary li{
+		float: none !important;
+		clear: both !important;
+		text-align: center !important;
+		width: 100% !important;
+		/*margin-top:10px;*/
+		margin-bottom:10px;
+	}
+
+	.headerflex li{
+		float: none !important;
+		clear: both !important;
+		text-align: center !important;
+		width: 100% !important;
+		/*margin-top:10px;*/
+		margin-bottom:10px;
+	}
+}
+
+.headerflex{
+	list-style:none;
+	margin: 0 0 10px 0px;
+	width: 100%;
+}
+
+.headerflex  li{
+	float: left;
+	text-align: center;
+}
+
+.headerflex-row-3 li{
+	width:33.33%;	
+}
+
+.headerflex-row-4 li{
+	width:25%;	
+}
+
+.headerflex-row-2 li{
+	width:50% ;	
+}
+
+.headerflex li:first-child{
+	text-align:left;	
+	margin-left:0;
+}
+
+.headerflex li:last-child{
+	text-align:right;	
+	margin-right:0;
+}
+
+.headerprimary .cont-buttons{
+	position:absolute; 
+	float: right;
+	right:0;
+	top:2px;
+}
+
+.headerprimary{
+	margin-bottom: 20px;
+	margin-left:0;
+	list-style:none;
+	position:relative;
+}
+
+.headerprimary legend.page-title {
+	margin-bottom: 10px !important;
+}
+
+
+ul.horizontal-list {
+ margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  text-align: center
+}
+
+ul.horizontal-list li {
+  display: inline;
+}
+
+.date > span.add-on:first-child{
+  width:40px !important;
+}
